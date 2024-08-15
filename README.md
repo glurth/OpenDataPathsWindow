@@ -1,12 +1,11 @@
 # OpenDataPathsWindow
 
-A Unity editor extension for quickly opening the `Application.persistentDataPath` and `Application.dataPath` directories in your file explorer.
+A Unity editor extension that adds an option to the File menu that will allow user to open the `Application.persistentDataPath` and `Application.dataPath` directories in the OS file explorer.
 
 ## Features
 
 - **Open Directories**: Open `Application.persistentDataPath` and `Application.dataPath` directly from the Unity Editor.
 - **Custom Explorer Path**: Set a custom path to an alternate file explorer application.
-- **Dynamic Window Height**: Adjusts the editor window height based on the visibility of the alternate explorer options.
 - **Platform Support**: Handles different platforms (Windows, macOS, Linux) for opening file explorers.
 
 ## Installation
