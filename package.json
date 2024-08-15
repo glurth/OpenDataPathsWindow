@@ -1,5 +1,5 @@
 {
-  "name": "com.glurth.OpenDataPathsWindow",
+  "name": "com.glurth.opendatapathswindow",
   "version": "1.0.0",
   "displayName": "OpenDataPathsWindow",
   "description": "Quick Open Window for UnityEditor data paths",
