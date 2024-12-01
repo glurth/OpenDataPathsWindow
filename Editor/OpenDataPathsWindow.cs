@@ -131,6 +131,7 @@ public class OpenDataPathsWindow : EditorWindow
 
     private void OpenInFileBrowser(string path)
     {
+        path = path.Replace("/", "\\");
         if (!string.IsNullOrEmpty(alternateExplorerPath) && File.Exists(alternateExplorerPath))
         {
             Process.Start(alternateExplorerPath, "\"" + path + "\"");
@@ -140,7 +141,7 @@ public class OpenDataPathsWindow : EditorWindow
             // Windows
             if (Application.platform == RuntimePlatform.WindowsEditor)
             {
-                Process.Start("explorer.exe", path.Replace("/", "\\"));
+                Process.Start("explorer.exe", path);
             }
             // macOS
             else if (Application.platform == RuntimePlatform.OSXEditor)
